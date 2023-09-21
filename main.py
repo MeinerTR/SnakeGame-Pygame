@@ -52,8 +52,6 @@ class Game:
         
         if pos in self.snake:
             return self.new_food();
-    
-        pg.draw.rect(self.window, (255,0,0), pos);
         return pos;
 
     def draw(self) -> None:
